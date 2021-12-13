@@ -1,13 +1,15 @@
 import LRU from "./LRU.js";
-const a = new LRU(4);
+const a = new LRU(3);
 a.put(1, 1);
 a.put(2, 1);
 a.get(2);
+a.get(1);
+a.get(1);
 a.put(3, 1);
-a.put(4, 1);
-a.put(5, 1);
-a.put(6, 1);
-a.get(6);
+// a.put(4, 1);
+// a.put(5, 1);
+// a.put(6, 1);
+// a.get(6);
 console.log(a.mas);
 //Testing
 // const cache = new LRU(4);
