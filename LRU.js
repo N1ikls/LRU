@@ -86,6 +86,6 @@
     }
   }
   if (typeof window.LRU === "undefined") {
-    window.LRU = new LRU();
+    window.LRU = LRU;
   }
-});
+})(window);
